@@ -40,5 +40,6 @@ jobs:
         
       # run tests!
       - run: gradle test
+      - run: sudo chmod +x ./gradlew
 
 
