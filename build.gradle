@@ -5,12 +5,17 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
+        //mavenRepo urls: 'http://ksoap2-android.googlecode.com/svn/m2-repo'
         maven {
             url "https://plugins.gradle.org/m2/"
+
+
         }
+
+
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.1.0'
         classpath "gradle.plugin.com.zeroc.gradle.ice-builder:slice:1.4.1"
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -26,10 +31,12 @@ slice {
 }
 dependencies {
     compile 'com.zeroc:ice:3.7.0'
+
 }
 allprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()
     }
 }
